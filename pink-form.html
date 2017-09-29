@@ -29,9 +29,10 @@
      </header>
      <h1 class="central-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     <main class="form-main">
+      <form class="form-list">
        <div class="request">
           <p class="request__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-          <form class="request__form">
+          <fieldset class="request__form">
                 <label class="request__last-name">
                 <input class="request-input__last-name input-item" type="text" name="last-name" placeholder="Укажите фамилию*">
                 <span class="request__span span-item">Фамилия:</span>
@@ -44,26 +45,24 @@
                 <input class="request-input__patronymic input-item" type="text" name="patroynymic" placeholder="Ну и отчество тоже">
                 <span class="request__span span-item">Отчество:</span>
                 </label>
-          </form>
-       </div>
-       <form class="filter">
-          <fieldset class="filter__achievements">
-             <legend class="filter__title">Ваши безбашенные достижения в путешествии</legend>
-             <input class="filter-input__achivement input-item" type="checkbox" name="achivement" id="achivement-1" checked>
-             <label class="filter-label__achivement" for="achivement-1">Сделал селфи с акулой</label>
-             <input class="filter-input__achivement input-item" type="checkbox" name="achivement" id="achivement-2" checked>
-             <label class="filter-label__achivement" for="achivement-2">Обгорел на пляже</label>
-             <input class="filter-input__achivement input-item" type="checkbox" name="achivement" id="achivement-3">
-             <label class="filter-label__achivement" for="achivement-3">Видел Чака Норриса</label>
-             <input class="filter-input__achivement input-item" type="checkbox" name="achivement" id="achivement-4">
-             <label class="filter-label" for="achivement-1">Накупил сувениров</label>
-             <input class="filter-input__achivement input-item" type="checkbox" name="achivement" id="achivement-5" checked>
-             <label class="filter-label" for="achivement-5">Удержал башню</label>
-             <input class="filter-input__achivement input-item" type="checkbox" name="achivement" id="achivement-6">
-             <label class="filter-label" for="achivement-6">Разгромил отель</label>
           </fieldset>
-       </form>
-       <form class="contacts">
+       </div>
+          <fieldset class="filter">
+             <legend class="filter__title">Ваши безбашенные достижения в путешествии</legend>
+             <input class="filter__input input-item" type="checkbox" name="achivement" id="achivement-1" checked>
+             <label class="filter__label" for="achivement-1">Сделал селфи с акулой</label>
+             <input class="filter__input input-item" type="checkbox" name="achivement" id="achivement-2" checked>
+             <label class="filter__label" for="achivement-2">Обгорел на пляже</label>
+             <input class="filter__input input-item" type="checkbox" name="achivement" id="achivement-3">
+             <label class="filter__label" for="achivement-3">Видел Чака Норриса</label>
+             <input class="filter__input input-item" type="checkbox" name="achivement" id="achivement-4">
+             <label class="filter__label" for="achivement-1">Накупил сувениров</label>
+             <input class="filter__input input-item" type="checkbox" name="achivement" id="achivement-5" checked>
+             <label class="filter__label" for="achivement-5">Удержал башню</label>
+             <input class="filter__input input-item" type="checkbox" name="achivement" id="achivement-6">
+             <label class="filter__label" for="achivement-6">Разгромил отель</label>
+          </fieldset>
+       <fieldset class="contacts">
           <label class="contacts__label">
              <input class="contacts__input" type="text" name="number" placeholder="Номер, пожалуйста">
              <span class="contacts__span span-item">Номер телефона</span>
@@ -72,37 +71,36 @@
              <input class="contacts__input" type="text" name="email" placeholder="Ведите почту*">
              <span class="contacts__span span-item">Адрес почты</span>
           </label>
-       </form>
-       <form class="criterion">
-          <fieldset class="criterion__filter">
+       </fieldset>
+          <fieldset class="criterion">
              <legend class="criterion__title">С каким приложением путешесттвовали?</legend>
-             <input class="criterion-input" type="radio" id="iOS" name="criterion" value="item1" checked>
-             <label class="criterion-label" for="iOS">Pink для iOS</label>
-             <input class="criterion-input" type="radio" id="Android" name="criterion" value="item2">
-             <label class="criterion-label" for="Android">Pink для Android</label>
-             <input class="criterion-input" type="radio" id="Windows" name="criterion" value="item3">
-             <label class="criterion-label" for="Windows">Windows Phone</label>
+             <input class="criterion__input" type="radio" id="iOS" name="criterion" value="item1" checked>
+             <label class="criterion__label" for="iOS">Pink для iOS</label>
+             <input class="criterion__input" type="radio" id="Android" name="criterion" value="item2">
+             <label class="criterion__label" for="Android">Pink для Android</label>
+             <input class="criterion__input" type="radio" id="Windows" name="criterion" value="item3">
+             <label class="criterion__label" for="Windows">Windows Phone</label>
           </fieldset>
-       </form>
-       <form class="comment">
+       <fieldset class="comment">
           <legend class="comment__title">Опишите свои эмоции</legend>
           <label class="comment__label">
              <textarea class="comment__textarea">Можно прям в красках, не стесняясь в выражениях</textarea>
           </label>
           <button class="comment__button" type="submit">Отправить форму</button>
           <p class="comment__text">* - обязательные поля</p>
-       </form>
+       </fieldset>
+      </form>
     </main>
     <footer class="page-footer">
        <div class="page-footer__block">
           <div class="page-footer__logo"></div>
           <div class="page-footer__social">
-             <div class="social__twitter social-item"></div>
-             <div class="social__facebook social-item"></div>
-             <div class="social__youtube social-item"></div>
+             <div class="social__item social-twitter"></div>
+             <div class="social__item social-facebook"></div>
+             <div class="social__item social-youtube"></div>
           </div>
           <div class="page-footer__realizer">
-             <p class="realizer__text">Разработано</p>
+             <p class="page-footer__text">Разработано</p>
           </div>
        </div>
      </footer>
