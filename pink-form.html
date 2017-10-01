@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="mobile-header">
+       <a class="mobile-header__logo">
+          <img class="mobile-header__logo-image" src="#" width="100%" height="100%" alt="Pink">
+       </a>
+       <nav class="main-nav">
+         <button class="main-nav__toggle" type="button">Открыть</button>
+         <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list--active">
+               <a href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+               <a href="#">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+               <a href="#">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+               <a href="#">Html Academy</a>
+            </li>
+         </ul>
+       </nav>
+     </header>
+     <h1 class="central-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <main class="form-main">
+      <form class="form-list">
+       <div class="request">
+          <p class="request__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+          <fieldset class="request__form">
+                <label class="request__last-name">
+                <input class="request-input__last-name input-item" type="text" name="last-name" placeholder="Укажите фамилию*">
+                <span class="request__span span-item">Фамилия:</span>
+                </label>
+                <label class="request__name">
+                <input class="request-input__name input-item" type="text" name="name" placeholder="Введите ваше имя*">
+                <span class="request__span span-item">Имя:</span>
+                </label>
+                <label class="request__patronymic">
+                <input class="request-input__patronymic input-item" type="text" name="patroynymic" placeholder="Ну и отчество тоже">
+                <span class="request__span span-item">Отчество:</span>
+                </label>
+          </fieldset>
+       </div>
+          <fieldset class="filter">
+             <legend class="filter__title">Ваши безбашенные достижения в путешествии</legend>
+             <input class="filter__input input-item" type="checkbox" name="achivement" id="achivement-1" checked>
+             <label class="filter__label" for="achivement-1">Сделал селфи с акулой</label>
+             <input class="filter__input input-item" type="checkbox" name="achivement" id="achivement-2" checked>
+             <label class="filter__label" for="achivement-2">Обгорел на пляже</label>
+             <input class="filter__input input-item" type="checkbox" name="achivement" id="achivement-3">
+             <label class="filter__label" for="achivement-3">Видел Чака Норриса</label>
+             <input class="filter__input input-item" type="checkbox" name="achivement" id="achivement-4">
+             <label class="filter__label" for="achivement-1">Накупил сувениров</label>
+             <input class="filter__input input-item" type="checkbox" name="achivement" id="achivement-5" checked>
+             <label class="filter__label" for="achivement-5">Удержал башню</label>
+             <input class="filter__input input-item" type="checkbox" name="achivement" id="achivement-6">
+             <label class="filter__label" for="achivement-6">Разгромил отель</label>
+          </fieldset>
+       <fieldset class="contacts">
+          <label class="contacts__label">
+             <input class="contacts__input" type="text" name="number" placeholder="Номер, пожалуйста">
+             <span class="contacts__span span-item">Номер телефона</span>
+          </label>
+          <label class="contacts__label">
+             <input class="contacts__input" type="text" name="email" placeholder="Ведите почту*">
+             <span class="contacts__span span-item">Адрес почты</span>
+          </label>
+       </fieldset>
+          <fieldset class="criterion">
+             <legend class="criterion__title">С каким приложением путешесттвовали?</legend>
+             <input class="criterion__input" type="radio" id="iOS" name="criterion" value="item1" checked>
+             <label class="criterion__label" for="iOS">Pink для iOS</label>
+             <input class="criterion__input" type="radio" id="Android" name="criterion" value="item2">
+             <label class="criterion__label" for="Android">Pink для Android</label>
+             <input class="criterion__input" type="radio" id="Windows" name="criterion" value="item3">
+             <label class="criterion__label" for="Windows">Windows Phone</label>
+          </fieldset>
+       <fieldset class="comment">
+          <legend class="comment__title">Опишите свои эмоции</legend>
+          <label class="comment__label">
+             <textarea class="comment__textarea">Можно прям в красках, не стесняясь в выражениях</textarea>
+          </label>
+          <button class="comment__button" type="submit">Отправить форму</button>
+          <p class="comment__text">* - обязательные поля</p>
+       </fieldset>
+      </form>
+    </main>
+    <footer class="page-footer">
+       <div class="page-footer__block">
+          <div class="page-footer__logo"></div>
+          <div class="page-footer__social">
+             <div class="social__item social-twitter"></div>
+             <div class="social__item social-facebook"></div>
+             <div class="social__item social-youtube"></div>
+          </div>
+          <div class="page-footer__realizer">
+             <p class="page-footer__text">Разработано</p>
+          </div>
+       </div>
+     </footer>
+  </body>
