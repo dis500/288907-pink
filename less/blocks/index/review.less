@@ -1,10 +1,49 @@
-.review{
-  background-color: @second-color;
-}
 
-.reviews-author-name{
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
-  color: @title-color;
-}
+ .review{
+   background-color: @second-color;
+   z-index: 5;
+ }
+
+ .reviews__list{
+ }
+
+ .reviews__author-name{
+   display: block;
+   font-size: 18px;
+   line-height: 30px;
+   font-weight: 700;
+   text-align: center;
+   color: @title-color;
+ }
+
+  .reviews__text{
+   margin-top: 10px;
+   padding: 0;
+   line-height: 30px;
+   text-align: center;
+ }
+
+ .slider__toggles{
+  width: 58px;
+  margin: 0 auto;
+
+ }
+
+ .slider__toggle{
+   width: 6px;
+   height: 6px;
+   color: transparent;
+   background-color: #bec2c7;
+   border: 0;
+   border-radius: 50%;
+ }
+
+ .slider__toggle:hover{
+   background-color: #7e868f;
+ }
+
+ .slider__toggle:active{
+   background-color: @second-color;
+   border: 3px solid @main-color;
+ }
+

@@ -10,28 +10,28 @@
 <body>
     <header class="index-header">
         <a class="index-header__logo">
-            <img class="mobile-header__logo-image" src="#" width="100%" height="100%" alt="Pink">
+            <img class="mobile-header__logo-image" src="../288907-pink/img/logo-pink-white-mobile.svg" width="100%" height="100%" alt="Pink">
         </a>
         <nav class="main-nav">
             <button class="main-nav__toggle" type="button">Открыть</button>
             <ul class="main-nav__list site-list">
                 <li class="site-list__item site-list--active">
-                    <a href="#">Главная</a>
+                    <a class="main-nav__link" href="#">Главная</a>
                 </li>
                 <li class="site-list__item">
-                    <a href="#">Фотографии</a>
+                    <a class="main-nav__link" href="#">Фотографии</a>
                 </li>
                 <li class="site-list__item">
-                    <a href="#">Конкурс</a>
+                    <a class="main-nav__link" href="#">Конкурс</a>
                 </li>
                 <li class="site-list__item">
-                    <a href="#">Html Academy</a>
+                    <a class="main-nav__link" href="#">Html Academy</a>
                 </li>
             </ul>
         </nav>
     </header>
     <article class="applet">
-        <img class="applet__img" src="../288907-pink/img/iphone-hand-mobile@1x.png" width="320" height="463">
+        <img class="applet__img" src="../288907-pink/img/iphone-hand-mobile@1x.png" width="257" height="286">
         <a class="applet__download-button button-item">Скачать приложение</a>
         <section class="applet__availability">
             <div class="applet__availability-oc">
@@ -44,20 +44,24 @@
     </article>
     <main class="index-main">
         <section class="content">
-            <h1 class="content__title">Устали от серости мегаполиса?</h1>
-            <h1 class="content__title">Нам есть, что вам предложить!</h1>
-            <div class="content__promo">
+          <div class="content__title">
+            <h1 class="content__title-item">Устали от серости мегаполиса?</h1>
+            <h1 class="content__title-item">Нам есть, что вам предложить!</h1>
+          </div>
+          <div class="content__promo">
+            <div class="content__promo-item">
                 <h2 class="content__promo-title">Поднимает настроение</h2>
                 <p class="content__promo-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </div>
-            <div class="content__promo">
+            <div class="content__promo-item">
                 <h2 class="content__promo-title">Меняет мир вокруг</h2>
                 <p class="content__promo-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </div>
-            <div class="content__promo">
+            <div class="content__promo-item">
                 <h2 class="content__promo-title">Заводит новых друзей</h2>
                 <p class="content__promo-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </div>
+          </div>
             <img class="content__image" src="../288907-pink/img/iphone-screen-mobile@1x.png" width="157" height="320">
         </section>
         <section class="review">
@@ -77,10 +81,10 @@
             <div class="price__wrapper slider">
                 <table class="price__list slider__item">
                     <tr>
-                        <th class="price__packet">База</th>
-                    </tr>
-                    <tr>
-                        <th class="price__packet">1,99 USD</th>
+                      <th class="price__packet">
+                        <p class="price__packet-type">База</p>
+                        <p class="price__packet-value">1,99 USD</p>
+                      </th>
                     </tr>
                     <tr>
                         <td class="price__packet-item">Розовый фильтр</td>
@@ -89,15 +93,15 @@
                         <td class="price__packet-item">Смайлики</td>
                     </tr>
                     <tr>
-                        <td class="pricw__packet-item">Комментарии</td>
+                        <td class="price__packet-item">Комментарии</td>
                     </tr>
                 </table>
                 <table class="price__list slider__item">
                     <tr>
-                        <th class="price__packet">Стандарт</th>
-                    </tr>
-                    <tr>
-                        <th class="price__packet">3,99 USD</th>
+                        <th class="price__packet">
+                            <p class="price__packet-type">Стандарт</p>
+                            <p class="price__packet-value">3,99 USD</p>
+                        </th>
                     </tr>
                     <tr>
                         <td class="price__packet-item">Розовый фильтр</td>
@@ -106,15 +110,15 @@
                         <td class="price__packet-item">Смайлики</td>
                     </tr>
                     <tr>
-                        <td class="pricw__packet-item">Комментарии</td>
+                        <td class="price__packet-item">Комментарии</td>
                     </tr>
                 </table>
                 <table class="price__list slider__item">
                     <tr>
-                        <th class="price__packet">Анлим</th>
-                    </tr>
-                    <tr>
-                        <th class="price__packet">9,99 USD</th>
+                        <th class="price__packet">
+                            <p class="price__packet-type">Анлим</p>
+                            <p class="price__packet-value">9,99 USD</p>
+                        </th>
                     </tr>
                     <tr>
                         <td class="price__packet-item">Розовый фильтр</td>
@@ -123,7 +127,7 @@
                         <td class="price__packet-item">Смайлики</td>
                     </tr>
                     <tr>
-                        <td class="pricw__packet-item">Комментарии</td>
+                        <td class="price__packet-item">Комментарии</td>
                     </tr>
                 </table>
                 <p class="price__toggles slider__toggles">
@@ -138,16 +142,19 @@
         <div class="contacts">
             <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
             <div class="contacts__block">
+              <div class="contacts__block-item">
                 <p class="contacts__text">Звоните:</p>
                 <p class="contacts__number contacts-data"> +7(812)555-66-66</p>
-
+              </div>
+              <div class="contacts__block-item">
                 <p class="contacts__text">Пишите:</p>
                 <p class="contacts-email contacts-data"> mail@htmlacademy.ru</p>
-
+              </div>
+              <div class="contacts__block-item">
                 <p class="contacts__text">Приезжайте в гости:</p>
                 <p class="contacts-address contacts-data"> ул.Большая<br>
                     Конюшенная, 19/8</p>
-
+              </div>
             </div>
         </div>
         <div class="map">

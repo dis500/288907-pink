@@ -1,13 +1,82 @@
+.post__wrapper{
+border-bottom: 1px solid #dddfe0;
+}
+
+.post__photo{
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+.post__icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 240px;
+  margin: 0 auto;
+}
+
+.post__icons-item{
+  width: 48px;
+  height: 44px;
+  border: 1px solid #000;
+}
+
+.post__indicator{
+  position: relative;
+  width: 240px;
+  height: 15px;
+  margin-top: 30px;
+  margin-bottom: 29px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.post__indicator-scale{
+  width: 240px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.post__indicator-toggle{
+  position: absolute;
+  top: -5px;
+  right: 40px;
+  width: 10px;
+  height: 10px;
+  background-color: @gray-light;
+  border: 2px solid @additory-color;
+  border-radius: 50%;
+}
+
+.post__buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 39px;
+  margin-bottom: 41px;
+}
+
 .button-item{
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 40px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
 }
 
-.post-button-active{
+.post__button-active{
+  margin-bottom: 18px;
   color: @additory-color;
+  background-color: @gray-light;
+  border: solid 3px @additory-color;
 }
 
-.post-button-inert{
-  color: @gray-light;
+.post__button-inert{
+  color: #e3e4e4;
+  background-color: @gray-light;
+  border: solid 3px #dddfe0;
 }

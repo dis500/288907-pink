@@ -1,13 +1,43 @@
 .criterion{
   background-color: @gray-light;
+  border: 0;
 }
 
-.criterion-title{
+.criterion__title{
+  width: 184px;
+  margin-bottom: 28px;
   line-height: 18px;
   color: @additory-color;
+  text-align: center;
+  text-transform: uppercase;
+
 }
 
-.criterion-label{
+.criterion__label{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-size: 18px;
   line-height: 30px;
 }
+
+.criterion__label:not(:last-child){
+  margin-bottom: 36px;
+}
+
+.criterion__label::before{
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: 31px;
+  background-color: @second-color;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.criterion__input{
+  display: none;
+}
+
+

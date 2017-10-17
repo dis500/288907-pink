@@ -16,16 +16,16 @@
             <button class="main-nav__toggle" type="button">Открыть</button>
             <ul class="main-nav__list site-list">
                 <li class="site-list__item site-list--active">
-                    <a href="#">Главная</a>
+                    <a class="main-nav__link" href="#">Главная</a>
                 </li>
                 <li class="site-list__item">
-                    <a href="#">Фотографии</a>
+                    <a class="main-nav__link" href="#">Фотографии</a>
                 </li>
                 <li class="site-list__item">
-                    <a href="#">Конкурс</a>
+                    <a class="main-nav__link" href="#">Конкурс</a>
                 </li>
                 <li class="site-list__item">
-                    <a href="#">Html Academy</a>
+                    <a class="main-nav__link" href="#">Html Academy</a>
                 </li>
             </ul>
         </nav>
@@ -37,50 +37,50 @@
                 <p class="request__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
                 <fieldset class="request__form">
                     <label class="request__last-name">
-                        <input class="request-input__last-name input-item" type="text" name="last-name" placeholder="Укажите фамилию*">
-                        <span class="request__span span-item">Фамилия:</span>
+                        <input class="request__form-input input-item" type="text" name="last-name" placeholder="Укажите фамилию*">
+                        <span class="request__span">Фамилия:</span>
                     </label>
                     <label class="request__name">
-                        <input class="request-input__name input-item" type="text" name="name" placeholder="Введите ваше имя*">
-                        <span class="request__span span-item">Имя:</span>
+                        <input class="request__form-input input-item" type="text" name="name" placeholder="Введите ваше имя*">
+                        <span class="request__span">Имя:</span>
                     </label>
                     <label class="request__patronymic">
-                        <input class="request-input__patronymic input-item" type="text" name="patroynymic" placeholder="Ну и отчество тоже">
-                        <span class="request__span span-item">Отчество:</span>
+                        <input class="request__form-input input-item" type="text" name="patroynymic" placeholder="Ну и отчество тоже">
+                        <span class="request__span">Отчество:</span>
                     </label>
                 </fieldset>
             </div>
             <fieldset class="filter">
                 <legend class="filter__title">Ваши безбашенные достижения в путешествии</legend>
-                <input class="filter__input input-item" type="checkbox" name="achivement" id="achivement-1" checked>
+                <input class="filter__input" type="checkbox" name="achivement" id="achivement-1" checked>
                 <label class="filter__label" for="achivement-1">Сделал селфи с акулой</label>
-                <input class="filter__input input-item" type="checkbox" name="achivement" id="achivement-2" checked>
+                <input class="filter__input" type="checkbox" name="achivement" id="achivement-2" checked>
                 <label class="filter__label" for="achivement-2">Обгорел на пляже</label>
-                <input class="filter__input input-item" type="checkbox" name="achivement" id="achivement-3">
+                <input class="filter__input" type="checkbox" name="achivement" id="achivement-3">
                 <label class="filter__label" for="achivement-3">Видел Чака Норриса</label>
-                <input class="filter__input input-item" type="checkbox" name="achivement" id="achivement-4">
+                <input class="filter__input" type="checkbox" name="achivement" id="achivement-4">
                 <label class="filter__label" for="achivement-1">Накупил сувениров</label>
-                <input class="filter__input input-item" type="checkbox" name="achivement" id="achivement-5" checked>
+                <input class="filter__input" type="checkbox" name="achivement" id="achivement-5" checked>
                 <label class="filter__label" for="achivement-5">Удержал башню</label>
-                <input class="filter__input input-item" type="checkbox" name="achivement" id="achivement-6">
+                <input class="filter__input" type="checkbox" name="achivement" id="achivement-6">
                 <label class="filter__label" for="achivement-6">Разгромил отель</label>
             </fieldset>
             <fieldset class="personal-data">
                 <label class="personal-data__label">
-                    <input class="personal-data__input" type="text" name="number" placeholder="Номер, пожалуйста">
+                    <input class="personal-data__input input-item" type="text" name="number" placeholder="Номер, пожалуйста">
                     <span class="personal-data__span span-item">Номер телефона</span>
                 </label>
                 <label class="personal-data__label">
-                    <input class="personal-data__input" type="text" name="email" placeholder="Ведите почту*">
+                    <input class="personal-data__input input-item" type="text" name="email" placeholder="Ведите почту*">
                     <span class="personal-data__span span-item">Адрес почты</span>
                 </label>
             </fieldset>
             <fieldset class="criterion">
-                <legend class="criterion__title">С каким приложением путешесттвовали?</legend>
+                <legend class="criterion__title">С каким приложением путешествовали?</legend>
                 <input class="criterion__input" type="radio" id="iOS" name="criterion" value="item1" checked>
                 <label class="criterion__label" for="iOS">Pink для iOS</label>
                 <input class="criterion__input" type="radio" id="Android" name="criterion" value="item2">
-                <label class="criterion__label" for="Android">Pink для Android</label>
+                <label class="criterion__label" for="Android">Pink на Android</label>
                 <input class="criterion__input" type="radio" id="Windows" name="criterion" value="item3">
                 <label class="criterion__label" for="Windows">Windows Phone</label>
             </fieldset>
@@ -100,9 +100,9 @@
                 <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="100%" height="100%">
             </div>
             <div class="page-footer__social">
-                <div class="social__item social-twitter"></div>
-                <div class="social__item social-facebook"></div>
-                <div class="social__item social-youtube"></div>
+                <div class="social__twitter social-item"></div>
+                <div class="social__facebook social-item"></div>
+                <div class="social__youtube social-item"></div>
             </div>
             <div class="page-footer__realizer">
                 <p class="page-footer__text">Разработано</p>
